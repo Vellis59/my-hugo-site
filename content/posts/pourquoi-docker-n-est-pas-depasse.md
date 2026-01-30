@@ -1,7 +1,7 @@
 +++
 title = 'Pourquoi Docker N Est Pas Depasse'
 date = 2026-01-30T23:07:48+01:00
-draft = true
+draft = false
 +++
 
 ## Pourquoi Docker n'est pas encore dépassé en 2026
