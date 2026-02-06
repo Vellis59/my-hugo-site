@@ -38,22 +38,22 @@
 </section>
 {{- end -}}
 
-{{- /* Per-section blocks */ -}}
-{{- $sections := slice
-  (dict "key" "apps" "title" "Apps" "url" "/apps/")
-  (dict "key" "tutorials" "title" "Tutorials" "url" "/tutorials/")
-  (dict "key" "guides" "title" "Guides" "url" "/guides/")
-  (dict "key" "comparisons" "title" "Comparisons" "url" "/comparisons/")
+{{- /* Category blocks (taxonomy-driven) */ -}}
+{{- $categories := slice
+  (dict "name" "Apps")
+  (dict "name" "Tutorials")
+  (dict "name" "Guides")
+  (dict "name" "Comparisons")
 -}}
 
 <section class="magazine-sections">
-  {{- range $sections -}}
-    {{- $key := .key -}}
-    {{- $items := where $all "Section" $key | first 4 -}}
+  {{- range $categories -}}
+    {{- $cat := .name -}}
+    {{- $items := where $all "Params.categories" "intersect" (slice $cat) | first 4 -}}
     {{- if gt (len $items) 0 -}}
     <div class="magazine-section">
       <header class="page-header">
-        <h2><a href="{{ .url }}">{{ .title }}</a></h2>
+        <h2><a href="{{ printf "/categories/%s/" (urlize $cat) }}">{{ $cat }}</a></h2>
       </header>
       <div class="magazine-grid">
         {{- range $items -}}
