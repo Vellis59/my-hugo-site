@@ -11,7 +11,7 @@
 
 {{- if gt (len $hero) 0 -}}
 <header class="page-header">
-  <h1>À la une</h1>
+  <h1>Featured</h1>
 </header>
 
 <section class="magazine-grid">
@@ -40,10 +40,10 @@
 
 {{- /* Per-section blocks */ -}}
 {{- $sections := slice
-  (dict "key" "actu" "title" "Actu" "url" "/actu/")
+  (dict "key" "apps" "title" "Apps" "url" "/apps/")
+  (dict "key" "tutorials" "title" "Tutorials" "url" "/tutorials/")
   (dict "key" "guides" "title" "Guides" "url" "/guides/")
-  (dict "key" "tests" "title" "Tests" "url" "/tests/")
-  (dict "key" "dossiers" "title" "Dossiers" "url" "/dossiers/")
+  (dict "key" "comparisons" "title" "Comparisons" "url" "/comparisons/")
 -}}
 
 <section class="magazine-sections">
@@ -88,7 +88,7 @@
 
 {{- if gt (len $paginator.Pages) 0 -}}
 <header class="page-header">
-  <h2>Derniers articles</h2>
+  <h2>Latest</h2>
 </header>
 
 {{- range $paginator.Pages -}}
