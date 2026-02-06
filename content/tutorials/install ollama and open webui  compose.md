@@ -1,5 +1,4 @@
----
-title: "Install Ollama + Open WebUI (Docker Compose)"
+---title: "Install Ollama + Open WebUI (Docker Compose)"
 date: 2026-02-06
 description: "A step-by-step Docker Compose setup for running Ollama with Open WebUI on your own machine."
 categories: ["Tutorials"]
@@ -7,6 +6,12 @@ tags: ["ollama", "open-webui", "docker", "docker-compose", "self-hosting", "loca
 featured: true
 # Keep the current published URL stable.
 slug: "install-ollama-and-open-webui--compose"
+cover:
+  image: "/images/ollama-openwebui-cover.jpg"
+  alt: "Ollama + Open WebUI (Docker Compose)"
+  caption: "Local AI stack: Ollama + Open WebUI"
+  relative: false
+
 ---
 
 Running large language models locally has become significantly easier thanks to modern tooling. By combining **Ollama** with **Open WebUI** and deploying them using **Docker Compose**, you can create a clean, reproducible, and user-friendly local AI environment in minutes.
