@@ -4,7 +4,9 @@ Static blog built with [Hugo](https://gohugo.io/) and the **PaperMod** theme.
 
 ## Requirements
 
-- Hugo **extended** (this repo’s GitHub Pages workflow uses `hugo-version: 0.146.0`).
+- Hugo **extended** **>= 0.146.0** (PaperMod requires it).
+  - CI (GitHub Pages) uses Hugo **0.146.0**.
+  - A `.tool-versions` file is provided if you use **asdf**.
 - Git (to pull the theme submodule).
 
 ## Theme
@@ -16,7 +18,7 @@ The theme is installed as a **git submodule**:
 Clone with submodules:
 
 ```bash
-git clone --recurse-submodules https://github.com/Vellis59/port8080-blog.git
+git clone --recurse-submodules https://github.com/Vellis59/my-hugo-site.git port8080-blog
 cd port8080-blog
 ```
 
