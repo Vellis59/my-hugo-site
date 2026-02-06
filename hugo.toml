@@ -1,9 +1,9 @@
 baseURL = 'https://Vellis59.github.io/port8080-blog/'
-languageCode = 'fr-fr'
+languageCode = 'en-us'
 title = 'port8080-blog'
 theme = 'PaperMod'
 
-defaultContentLanguage = 'fr'
+defaultContentLanguage = 'en'
 enableRobotsTXT = true
 
 [pagination]
@@ -18,9 +18,10 @@ enableRobotsTXT = true
 
 [params]
   env = 'production'
-  description = 'Actu, guides et tests tech'
+  description = 'Self-hosted open-source apps: tutorials, guides, comparisons.'
 
-  mainSections = ['actu','guides','tests','dossiers']
+  # Keep existing section paths stable; only labels/content are translated.
+  mainSections = ['apps','tutorials','guides','comparisons']
 
   ShowReadingTime = true
   ShowShareButtons = true
@@ -31,27 +32,37 @@ enableRobotsTXT = true
 
 [menu]
   [[menu.main]]
-    identifier = 'actu'
-    name = 'Actu'
-    url = '/actu/'
+    identifier = 'apps'
+    name = 'Apps'
+    url = '/apps/'
     weight = 10
+  [[menu.main]]
+    identifier = 'tutorials'
+    name = 'Tutorials'
+    url = '/tutorials/'
+    weight = 20
   [[menu.main]]
     identifier = 'guides'
     name = 'Guides'
     url = '/guides/'
-    weight = 20
-  [[menu.main]]
-    identifier = 'tests'
-    name = 'Tests'
-    url = '/tests/'
     weight = 30
   [[menu.main]]
-    identifier = 'dossiers'
-    name = 'Dossiers'
-    url = '/dossiers/'
+    identifier = 'comparisons'
+    name = 'Comparisons'
+    url = '/comparisons/'
     weight = 40
   [[menu.main]]
-    identifier = 'a-propos'
-    name = 'À propos'
-    url = '/a-propos/'
+    identifier = 'uses'
+    name = 'Uses'
+    url = '/uses/'
+    weight = 80
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    url = '/about/'
     weight = 90
+  [[menu.main]]
+    identifier = 'contact'
+    name = 'Contact'
+    url = '/contact/'
+    weight = 100
