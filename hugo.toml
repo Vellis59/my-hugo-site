@@ -1,4 +1,4 @@
-baseURL = 'https://Vellis59.github.io/my-hugo-site/'
+baseURL = 'https://Vellis59.github.io/port8080-blog/'
 languageCode = 'fr-fr'
-title = 'Mon Site Hugo'
+title = 'port8080-blog'
 theme = 'PaperMod'

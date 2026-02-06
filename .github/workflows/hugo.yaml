@@ -33,7 +33,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "https://Vellis59.github.io/my-hugo-site/"
+            --baseURL "https://Vellis59.github.io/port8080-blog/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
